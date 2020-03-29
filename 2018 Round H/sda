@@ -1,0 +1,14 @@
+new_s = list(s)
+    new_s= list(set(new_s))
+    sub_len= len(new_s)
+    subs="".join(new_s)
+
+    print(subs)
+   
+    s= list(s)
+    window=""
+    for item in s:
+        window += item
+        if set(list(window)) == new_s: 
+            break
+    return sub_len
